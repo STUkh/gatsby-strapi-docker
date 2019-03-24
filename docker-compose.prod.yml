@@ -1,0 +1,5 @@
+version: '3'
+services:
+  gatsby:
+    environment:
+      NODE_ENV: production

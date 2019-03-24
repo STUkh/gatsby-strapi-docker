@@ -1,0 +1,50 @@
+{
+  "name": "gatsby-wordpress-docker",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby, Wordpress and everything in Docker",
+  "version": "0.1.0",
+  "author": "Alex Stepchenkov <stukak@gmail.com>",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gatsby": "^2.2.5",
+    "gatsby-image": "^2.0.34",
+    "gatsby-node-helpers": "^0.3.0",
+    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.10",
+    "gatsby-plugin-sharp": "^2.0.30",
+    "gatsby-source-filesystem": "^2.0.27",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "lodash": "^4.17.11",
+    "pluralize": "^7.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "docker:dev": "docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml up",
+    "docker:prod": "docker-compose -f docker-compose.yaml -f docker-compose.prod.yaml up",
+    "docker:down": "docker-compose down"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

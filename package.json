@@ -1,0 +1,20 @@
+{
+  "name": "gatsby-strapi-docker",
+  "version": "0.1.0",
+  "description": "A simple starter to get up and developing quickly with Gatsby, Strapi and wrap everything in Docker",
+  "main": "index.js",
+  "scripts": {
+    "docker:dev": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml up",
+    "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up",
+    "docker:down": "docker-compose down"
+  },
+  "author": "Alex Stepchenkov <stukak@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/STUkh/gatsby-strapi-docker"
+  },
+  "bugs": {
+    "url": "https://github.com/STUkh/gatsby-strapi-docker/issues"
+  }
+}

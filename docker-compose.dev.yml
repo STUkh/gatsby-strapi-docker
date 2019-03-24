@@ -1,0 +1,16 @@
+version: '3'
+services:
+  gatsby:
+    command: ["./wait-for-strapi.sh", "gatsby", "develop", "--host", "0.0.0.0"]
+    volumes:
+      - ./gatsby/src:/home/gatsby-app/src
+    environment:
+      NODE_ENV: development
+    stdin_open: true
+    tty: true
+  strapi:
+    stdin_open: true
+    tty: true
+  db:
+    stdin_open: true
+    tty: true
