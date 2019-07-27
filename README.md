@@ -8,7 +8,7 @@
 
     Just startup all your environment with one of this commands
 
-    `docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml up` or `npm run docker:dev`
+    `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up` or `npm run docker:dev`
     
     Initially it will create image: download and setup layers for NodeJS, Strapi, Mongo and Gatsby, and startup containers. Further runnings will only startup containers.
 
